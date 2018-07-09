@@ -1,0 +1,110 @@
+/* Imports
+----------------------------*/
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+
+/* Global Styles
+----------------------------*/
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  background: #EDF2F4;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+}
+h2 {
+  margin-top: 0;
+}
+#header-img {
+  height: 30px;
+}
+.title {
+  text-align: center;
+}
+.center {
+  text-align: center;
+}
+h2 ~ p {
+  margin-bottom: 0;
+}
+p {
+  font-family: inherit;
+  font-weight: 300;
+}
+li {
+  font-family: inherit;
+  font-weight: 100;
+}
+a {
+  color: #c18934;
+}
+a:hover {
+  text-decoration: none;
+}
+.btn-dark {
+  color: #c18934;
+  background: #2B2D42;
+}
+#main-doc {
+  padding: 0 30px;
+  margin-left: 20%;
+}
+#main-doc header {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 10px 0 10px -20px;
+}
+pre {
+  background: #cccccc;
+  padding: 10px 0;
+}
+
+/* Navigation
+----------------------------*/
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 20%;
+  height: 100vh;
+  overflow-y: scroll;
+  border-right: 2px solid black;
+}
+#navbar header {
+  font-size: 28px;
+  font-weight: 700;
+  padding: 10px;
+}
+.nav-link {
+  color: #c18934;
+  border-top: 1px solid black;
+  padding-left: 30px;
+}
+.navbar-toggler {
+  color: rgba(193, 137, 52, .85);
+  border-color: rgba(193, 137, 52, .75);
+}
+
+/* Media Queries
+----------------------------*/
+@media (max-width: 1023px) {
+  .sidebar {
+    position: static;
+    width: 100vw;
+    height: 250px;
+    overflow: scroll;
+    border: 2px solid black;
+  }
+  #navbar header {
+    text-align: center;
+  }
+  #main-doc {
+    padding: 0 30px;
+    margin: 0;
+    width: 100vw;
+    height: auto;
+  }
+}
